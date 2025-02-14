@@ -1,31 +1,27 @@
 import React from "react";
+import My1 from "../images/My1.jpg"
 
 const Infomation = () => {
   return (
-    <div className="min-h-[6rem] min-w-[18rem] bg-neutral rounded-box shadow-2xl text-white p-4">
-      <div className="text-4xl m-3">Information</div>
-      <div className="grid grid-cols-2 gap-4">
-        <div className="flex justify-center">
-          <img
-            src="./src/images/My3.jpg"
-            alt=""
-            style={{ width: "300px" }}
-            className="rounded-box shadow-2xl"
-          />
-        </div>
-        <div className="bg-[#f3f4f6] rounded-box shadow-2xl p-8 text-black flex justify-start grid grid-rows-4 grid-flow-col ">
-          <div className="text-4xl flex justify-start">
-            Name : Prapatsorn Chaiprom
-          </div>
-          <div className="text-4xl flex justify-start">
-            Age : 21
-          </div>
-          <div className="text-4xl flex justify-start">
-            
+    <>
+      <div className="min-h-[6rem] min-w-[18rem] bg-neutral rounded-box shadow-2xl text-white p-4">
+        <div className="card lg:card-side bg-base-100 shadow-xl transition duration-300 ease-in-out">
+          <figure>
+            <img
+              src={My1}
+              alt="Album"
+              style={{height:'500px',width:'400px'}}
+            />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title text-4xl">Name : Prapatsorn Chaiprom</h2>
+            <h2 className="card-title text-4xl">Call me : Toyo</h2>
+            <h2 className="card-title text-4xl">Age : 21 Year old</h2>
+            <h2 className="card-title text-4xl">Studying : Computer Education KMUTNB</h2>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

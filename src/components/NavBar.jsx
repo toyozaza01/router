@@ -2,14 +2,14 @@ import { Link } from "react-router-dom";
 export const NavBar = () => {
   return (
     <div>
-      <div className="flex min-h-[6rem] min-w-[18rem] flex-wrap items-center justify-center gap-2  bg-cover bg-top p-4">
+      <div className=" flex min-h-[6rem] min-w-[18rem] flex-wrap items-center justify-center gap-2  bg-cover bg-top p-4">
         <div className="navbar bg-[#fafafa] shadow-2xl rounded-box">
           <div className="navbar-start">
             <div className="dropdown">
               <div
                 tabIndex={0}
                 role="button"
-                className="btn btn-ghost btn-circle"
+                className="btn btn-ghost btn-circle text-black"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +28,7 @@ export const NavBar = () => {
               </div>
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow "
               >
                 <li>
                   <Link to="/">
@@ -60,7 +60,7 @@ export const NavBar = () => {
           </div>
           <div className="navbar-center">
             <Link to="/">
-              <a className="btn btn-ghost text-xl">PPS CH.</a>
+              <a className="btn btn-ghost text-xl text-black">PPS CH.</a>
             </Link>
           </div>
           <div className="navbar-end">
