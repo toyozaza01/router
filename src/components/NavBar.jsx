@@ -3,7 +3,7 @@ export const NavBar = () => {
   return (
     <div>
       <div className="flex min-h-[6rem] min-w-[18rem] flex-wrap items-center justify-center gap-2  bg-cover bg-top p-4">
-        <div className="navbar bg-[#cbd5e1] shadow-2xl rounded-box">
+        <div className="navbar bg-[#fafafa] shadow-2xl rounded-box">
           <div className="navbar-start">
             <div className="dropdown">
               <div

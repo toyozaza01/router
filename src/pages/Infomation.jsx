@@ -13,8 +13,16 @@ const Infomation = () => {
             className="rounded-box shadow-2xl"
           />
         </div>
-        <div className="bg-[#f3f4f6] rounded-box shadow-2xl p-8 text-black flex justify-start ">
-  
+        <div className="bg-[#f3f4f6] rounded-box shadow-2xl p-8 text-black flex justify-start grid grid-rows-4 grid-flow-col ">
+          <div className="text-4xl flex justify-start">
+            Name : Prapatsorn Chaiprom
+          </div>
+          <div className="text-4xl flex justify-start">
+            Age : 21
+          </div>
+          <div className="text-4xl flex justify-start">
+            
+          </div>
         </div>
       </div>
     </div>
