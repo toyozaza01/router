@@ -1,16 +1,26 @@
-import { BrowserRouter, Route , Routes } from "react-router-dom";
-import './App.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavBar from "./components/NavBar.jsx";
+import Footer from "./components/Footer.jsx";
+import "./App.css";
+import Welcome from "./pages/Welcome.jsx";
+import Infomation from "./pages/Infomation.jsx";
+import Ativities from "./pages/Ativities.jsx";
+import Education from "./pages/Education.jsx";
+import Contact from "./pages/Contact.jsx";
+
 function App() {
   return (
-    <>
-        <BrowserRouter>
-          <Routes>
-            <Route>
-              
-            </Route>
-          </Routes>
-        </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Welcome />} />
+        <Route path="/infomation" element={<Infomation />} />
+        <Route path="/activities" element={<Ativities />} />
+        <Route path="/education" element={<Education />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 
