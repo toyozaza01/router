@@ -7,6 +7,7 @@ import Infomation from "./pages/Infomation.jsx";
 import Ativities from "./pages/Ativities.jsx";
 import Education from "./pages/Education.jsx";
 import Contact from "./pages/Contact.jsx";
+import PageNotFound from "./pages/PageNotFound.jsx";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/activities" element={<Ativities />} />
         <Route path="/education" element={<Education />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />
     </BrowserRouter>
